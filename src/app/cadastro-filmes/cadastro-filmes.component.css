@@ -1,0 +1,55 @@
+.form-container {
+    max-width: 400px; /* Limita a largura do contêiner */
+    margin: auto; /* Centraliza o contêiner horizontalmente */
+    padding: 20px; /* Adiciona espaço interno */
+    border: 1px solid #ccc; /* Adiciona borda ao contêiner */
+    border-radius: 8px; /* Arredonda as bordas */
+    background-color: #f9f9f9; /* Define a cor de fundo */
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Adiciona sombra para efeito de profundidade */
+  }
+  
+  h2 {
+    text-align: center; /* Centraliza o texto do cabeçalho */
+    color: #333; /* Define a cor do texto */
+    margin-bottom: 20px; /* Espaçamento inferior do cabeçalho */
+  }
+  
+  label {
+    display: block; /* Faz com que os rótulos ocupem a linha inteira */
+    margin-bottom: 5px; /* Espaço abaixo dos rótulos */
+    font-weight: bold; /* Destaca os rótulos em negrito */
+    color: #555; /* Cor do texto dos rótulos */
+  }
+  
+  input[type="text"],
+  input[type="number"] {
+    width: 100%; /* Faz os campos de entrada ocuparem toda a largura */
+    padding: 10px; /* Adiciona espaço interno */
+    border: 1px solid #ccc; /* Borda leve para os campos de entrada */
+    border-radius: 4px; /* Arredonda as bordas dos campos */
+    margin-bottom: 15px; /* Espaçamento inferior entre os campos */
+    font-size: 16px; /* Define o tamanho da fonte */
+  }
+  
+  input:focus {
+    border-color: #007bff; /* Cor da borda ao focar no campo */
+    outline: none; /* Remove o contorno padrão ao focar */
+    box-shadow: 0 0 5px rgba(0, 123, 255, 0.5); /* Adiciona sombra ao focar */
+  }
+  
+  button[type="submit"] {
+    width: 100%; /* O botão ocupa toda a largura */
+    padding: 10px; /* Adiciona espaço interno ao botão */
+    background-color: #007bff; /* Cor de fundo do botão */
+    color: white; /* Cor do texto do botão */
+    border: none; /* Remove a borda padrão */
+    border-radius: 4px; /* Arredonda as bordas do botão */
+    font-size: 16px; /* Define o tamanho da fonte do botão */
+    cursor: pointer; /* Muda o cursor ao passar sobre o botão */
+    transition: background-color 0.3s ease; /* Transição suave para a cor de fundo */
+  }
+  
+  button[type="submit"]:hover {
+    background-color: #0056b3; /* Cor de fundo do botão ao passar o mouse */
+  }
+  

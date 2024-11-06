@@ -1,0 +1,49 @@
+<div class="lista-locacoes-container">
+    <h2>Lista de Locações</h2>
+    <table>
+      <thead>
+        <tr>
+          <th>Cliente</th>
+          <th>Filme</th>
+          <th>Quantidade de Dias</th>
+          <th>Valor Total</th>
+          <th>Ações</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr *ngFor="let locacao of locacoes; let i = index">
+          <td>{{ locacao.cliente.nome }}</td>
+          <td>{{ locacao.filme.nome }}</td>
+          <td>{{ locacao.quantidadeDias }}</td>
+          <td>R$ {{ locacao.valorTotal }}</td>
+          <td>
+            <!-- Botões de Ações: Editar e Excluir -->
+            <button (click)="editarLocacao(i)">Editar</button>
+            <button (click)="excluirLocacao(i)">Excluir</button>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+    
+    <!-- Formulário de Edição -->
+    <div *ngIf="locacaoEditando">
+      <h3>Editar Locação</h3>
+      <form (ngSubmit)="salvarEdicao()">
+        <label for="cliente">Cliente:</label>
+        <input [(ngModel)]="locacaoEditando.cliente.nome" name="cliente" required>
+  
+        <label for="filme">Filme:</label>
+        <input [(ngModel)]="locacaoEditando.filme.nome" name="filme" required>
+  
+        <label for="dias">Quantidade de Dias:</label>
+        <input [(ngModel)]="locacaoEditando.quantidadeDias" name="dias" type="number" required>
+  
+        <label for="valor">Valor Total:</label>
+        <input [(ngModel)]="locacaoEditando.valorTotal" name="valor" type="number" required>
+  
+        <button type="submit">Salvar</button>
+        <button type="button" (click)="cancelarEdicao()">Cancelar</button>
+      </form>
+    </div>
+  </div>
+  

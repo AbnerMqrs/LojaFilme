@@ -1,0 +1,48 @@
+.lista-locacoes-container {
+    max-width: 800px; /* Limita a largura do contêiner */
+    margin: auto; /* Centraliza o contêiner */
+    padding: 20px; /* Adiciona espaço interno */
+    background-color: #f9f9f9; /* Define a cor de fundo */
+    border-radius: 8px; /* Arredonda as bordas */
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Adiciona sombra para efeito de profundidade */
+}
+
+h2 {
+    text-align: center; /* Centraliza o texto do cabeçalho */
+    color: #333; /* Cor do texto */
+    margin-bottom: 20px; /* Espaçamento inferior do cabeçalho */
+}
+
+table {
+    width: 100%; /* A tabela ocupa toda a largura */
+    border-collapse: collapse; /* Remove os espaços entre as células */
+}
+
+th, td {
+    padding: 12px; /* Adiciona espaço interno às células */
+    text-align: left; /* Alinha o texto à esquerda */
+    border-bottom: 1px solid #ddd; /* Adiciona uma linha inferior leve */
+}
+
+th {
+    background-color: #007bff; /* Cor de fundo do cabeçalho */
+    color: white; /* Cor do texto do cabeçalho */
+}
+
+tr:hover {
+    background-color: #f1f1f1; /* Cor de fundo ao passar o mouse sobre a linha */
+}
+
+button {
+    padding: 8px 12px; /* Adiciona espaço interno ao botão */
+    background-color: #dc3545; /* Cor de fundo do botão */
+    color: white; /* Cor do texto do botão */
+    border: none; /* Remove a borda padrão */
+    border-radius: 4px; /* Arredonda as bordas do botão */
+    cursor: pointer; /* Muda o cursor ao passar sobre o botão */
+    transition: background-color 0.3s ease; /* Transição suave para a cor de fundo */
+}
+
+button:hover {
+    background-color: #c82333; /* Cor de fundo do botão ao passar o mouse */
+}
